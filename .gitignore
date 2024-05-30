@@ -68,3 +68,4 @@ yarn.lock
 bun.lockb
 *.vsix
 out
+tsconfig.tsbuildinfo

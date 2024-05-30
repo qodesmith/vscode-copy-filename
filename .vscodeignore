@@ -16,3 +16,4 @@ tsconfig.build.tsbuildinfo
 .yarnrc
 **/.eslintrc.json
 node_modules
+tsconfig.tsbuildinfo
