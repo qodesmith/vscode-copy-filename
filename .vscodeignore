@@ -13,3 +13,6 @@ vsc-extension-quickstart.md
 .prettierrc.json
 tsconfig.build.json
 tsconfig.build.tsbuildinfo
+.yarnrc
+**/.eslintrc.json
+node_modules
