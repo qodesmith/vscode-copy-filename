@@ -14,34 +14,19 @@
     "name": "Brad Zacher",
     "url": "https://github.com/bradzacher"
   },
-  "scripts": {
-    "vscode:prepublish": "yarn run clean && yarn run build",
-    "build": "tsc -b tsconfig.build.json",
-    "clean": "tsc -b tsconfig.build.json --clean",
-    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ./.prettierignore",
-    "lint": "eslint . --ext .js,.ts --ignore-path ./.eslintignore",
-    "vscode:publish": "yarn vsce publish",
-    "pretest": "yarn run build",
-    "test": "node ./out/test/runTest.js",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
-    "watch": "tsc -b tsconfig.build.json --watch"
-  },
   "devDependencies": {
     "@types/glob": "^7.1.1",
     "@types/jest": "^26.0.14",
     "@types/node": "^14.11.2",
-    "@types/vscode": "^1.30.0",
     "eslint-config-brad": "^4.0.0",
     "glob": "^7.1.5",
     "jest": "^26.4.2",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.3",
-    "vsce": "^1.69.0",
-    "vscode-test": "^1.2.2"
+    "typescript": "^4.0.3"
   },
   "//": "vscode extension settings",
   "engines": {
-    "vscode": "^1.32.0"
+    "vscode": "^1.89.0"
   },
   "keywords": [
     "sidebar",
@@ -52,12 +37,6 @@
   ],
   "categories": [
     "Other"
-  ],
-  "activationEvents": [
-    "onCommand:extension.copyFileName",
-    "onCommand:extension.copyFileNameOfActiveFile",
-    "onCommand:extension.copyFileNameNoExtension",
-    "onCommand:extension.copyFileNameNoExtensionOfActiveFile"
   ],
   "extensionKind": [
     "ui",
@@ -133,5 +112,9 @@
   "galleryBanner": {
     "color": "#1c2237",
     "theme": "dark"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.89.0",
+    "@vscode/vsce": "^2.26.1"
   }
 }
