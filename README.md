@@ -1,5 +1,7 @@
 # vscode-copy-filename
 
+_Project originally cloned from [Brad Zacher](https://github.com/bradzacher/vscode-copy-filename)._
+
 This extension adds the following:
 
 1. File Explorer right click menu items which allow you to copy one (or more) filenames with (or without) the extension:
